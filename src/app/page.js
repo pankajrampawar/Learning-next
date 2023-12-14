@@ -8,9 +8,9 @@ export default function Home() {
   const bgDesktop = "/assets/home/background-home-desktop.jpg";
 
   return <div>
-    <img src={bgMobile} className='sm:hidden'/>
-    <img src={bgTablet} className='hidden sm:block lg:hidden'/>
-    <img src={bgDesktop} className='hidden lg:block fixed z-0 top-0'/>
+    <img src={bgMobile} className='sm:hidden  fixed z-0 top-0 w-full h-full'/>
+    <img src={bgTablet} className='hidden sm:block lg:hidden  fixed z-0 top-0 w-full h-full'/>
+    <img src={bgDesktop} className='hidden lg:block fixed z-0 top-0 w-full h-full'/>
 
     <div className='relative z-10'>
       <Navbar/>
