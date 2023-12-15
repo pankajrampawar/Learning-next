@@ -56,7 +56,7 @@ export default function Destination () {
 
         <section className="flex flex-col xl:flex-row items-center text-center gap-6 md:gap-12 mt-10 px-5 xl:justify-center xl:mx-36 xl:text-start">
 
-            <div className="flex flex-col items-center xl:items-start gap-6 xl:gap-20 md:gap-12 text-center w-full">
+            <div className="flex flex-col items-center xl:items-start gap-6 xl:gap-20 md:gap-12 text-center w-full xl:max-w-[620px]">
                 <div className="flex gap-2 text-sm md:self-start md:text-base xl:text-xl justify-center">
                     <span className="font-bold">01</span>
                     <span>PICK YOUR DESTINATION</span>
