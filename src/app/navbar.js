@@ -33,15 +33,15 @@ export default function Navbar() {
             </span>
             <span className='flex items-center'>
                 <p className='font-bold  mr-3'>01</p>
-                <Link href='/Destination'>DESTINATION</Link>
+                <Link href='/destination'>DESTINATION</Link>
             </span>
             <span className='flex items-center'>
                 <p className='font-bold  mr-3'>02</p>
-                <Link href='/Crew'>CREW</Link>
+                <Link href='/crew'>CREW</Link>
             </span>
             <span className='flex items-center'>
                 <p className='font-bold  mr-3'>03</p>
-                <Link href='/Technology'>TECHNOLOGY</Link>
+                <Link href='/technology'>TECHNOLOGY</Link>
             </span>
         </div>
     </main>

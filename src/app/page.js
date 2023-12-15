@@ -1,4 +1,5 @@
 import Navbar from './navbar'
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -24,9 +25,12 @@ export default function Home() {
       </section>
       
       <section>
-        <div className='bg-white aspect-square h-64 rounded-full text-black text-4xl flex justify-center items-center'>
+      <Link href='/destination'>
+        <div className='hoverOver relative bg-white aspect-square h-64 rounded-full text-black text-4xl flex justify-center items-center cursor-pointer'>
           Explore
         </div>
+      </Link>
+        
       </section>
     </main>
   </div>
