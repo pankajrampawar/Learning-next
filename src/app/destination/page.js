@@ -31,6 +31,28 @@ export default function Destination () {
             <div>
                 <img src={`/assets/destination/image-moon.png`} />
             </div>
+
+            <div>
+                <div>
+                    <sapn>MOON</sapn>
+                </div>
+
+                <h1>moon title</h1>
+
+                <p>moon information</p>
+
+                <div>
+                    <p>
+                        <span>AVG. DISTANCE</span>
+                        <span>DISTANCE</span>
+                    </p>
+
+                    <p>
+                        <span>EST. TRAVEL TIME</span>
+                        <span>timeToTravel</span>
+                    </p>
+                </div>
+            </div>
         </section>
     </div>
 }
