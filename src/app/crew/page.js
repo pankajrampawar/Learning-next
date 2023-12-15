@@ -11,28 +11,32 @@ export default function Crew() {
         1: {
             role: "COMMANDER",
             name: "Douglas Hurley",
-            details: "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2."
+            details: "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.",
+            imagePath: "/assets/crew/image-douglas-hurley.png"
         },
         2: {
             role: "",
             name: "",
-            details: ""
+            details: "",
+            imagePath: "/assets/crew/image-mark-shuttleworth.png"
         },
         3: {
             role: "",
             name: "",
-            details: ""
+            details: "",
+            imagePath: "/assets/crew/image-victor-glover.png"
         },
         4: {
             role: "",
             name: "",
-            details: ""
+            details: "",
+            imagePath: "/assets/crew/image-anousheh-ansari.png"
         }
     }
 
     const selectedCrewMember = crewMembers[selection];
 
-    return <main>
+    return <main className="overflow-hidden">
 
         <div>
 
@@ -63,7 +67,7 @@ export default function Crew() {
                 </div>
 
                 <div>
-                    <img src="dd" alt={`${selectedCrewMember.name}`} />
+                    <img src={selectedCrewMember.imagePath} alt={`${selectedCrewMember.name}`} />
                 </div>
             </section>
         </div>
