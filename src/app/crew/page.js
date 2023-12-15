@@ -38,8 +38,10 @@ export default function Crew() {
 
     return <main className="overflow-hidden">
 
-        <div>
-
+        <div className="fixed top-0 left-0 -z-10 w-full h-full">
+            <img src="/assets/crew/background-crew-mobile.jpg" alt="space background" className="h-full w-full sm:hidden"/>
+            <img src="/assets/crew/background-crew-tablet.jpg" alt="space background" className="h-full w-full hidden md:block xl:hidden"/>
+            <img src="/assets/crew/background-crew-desktop.jpg" alt="space background" className="h-rull w-full hidden xl:block"/>
         </div>
 
         <nav>
