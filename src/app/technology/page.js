@@ -42,28 +42,28 @@ export default function Technology() {
             <Navbar/>
         </nav>
 
-        <section className="flex flex-col items-center text-center">
-            <div className="flex text-base">
+        <section className="flex flex-col items-center text-center mt-8 md:mt-10">
+            <div className="flex text-base md:text-xl md:self-start ml-[40px]">
                 <span className="font-bold mr-2">03</span>
                 <h2>SPACE LAUNCH 101</h2>
             </div>
             
-            <div className="flex flex-col">
+            <div className="flex flex-col items-center">
                 
-                <div className="order-3 px-5 mt-7">
-                    <h3 className="text-sm">THE TERMINOLOGY..</h3>
-                    <h1 className="text-2xl">{selectedTechnology.title}</h1>
-                    <p className="text-base font-thin">{selectedTechnology.detail}</p>
+                <div className="order-3 px-5 mt-7 md:mt-11 md:max-w-[458px]">
+                    <h3 className="text-sm md:tex-base">THE TERMINOLOGY..</h3>
+                    <h1 className="text-2xl md:text-[40px] md:mt-4">{selectedTechnology.title}</h1>
+                    <p className="text-base font-thin md:mt-4">{selectedTechnology.detail}</p>
                 </div>
 
-                <div className="flex gap-4 order-2 justify-center mt-9">
-                    <div className={`flex items-center justify-center w-10 h-10 border border-gray-600 rounded-full ${selection === 1 ? 'bg-white text-black' : 'bg-transparent text-white'}`}>1</div>
-                    <div className={`flex items-center justify-center w-10 h-10 border border-gray-600 rounded-full ${selection === 2 ? 'bg-white text-black' : 'bg-transparent text-white'}`}>2</div>
-                    <div className={`flex items-center justify-center w-10 h-10 border border-gray-600 rounded-full ${selection === 3 ? 'bg-white text-black' : 'bg-transparent text-white'}`}>3</div>
+                <div className="flex gap-4 order-2 justify-center mt-9 md:mt-[56px]">
+                    <div className={`flex items-center justify-center w-10 h-10 md:w-[60px] md:h-[60px] border border-gray-600 rounded-full ${selection === 1 ? 'bg-white text-black' : 'bg-transparent text-white'}`} onClick={()=>{setSelection(1)}}>1</div>
+                    <div className={`flex items-center justify-center w-10 h-10 md:w-[60px] md:h-[60px] border border-gray-600 rounded-full ${selection === 2 ? 'bg-white text-black' : 'bg-transparent text-white'}`} onClick={()=>{setSelection(2)}}>2</div>
+                    <div className={`flex items-center justify-center w-10 h-10 md:w-[60px] md:h-[60px] border border-gray-600 rounded-full ${selection === 3 ? 'bg-white text-black' : 'bg-transparent text-white'}`} onClick={()=>{setSelection(3)}}>3</div>
                 </div>
 
-                <div className='order-1 mt-8'>
-                    <img src={selectedTechnology.imageLandscape} alt={selectedTechnology.title}  className="xl:hidden"/>
+                <div className='order-1 mt-8 md:mt-[60px] md:h-[310px]'>
+                    <img src={selectedTechnology.imageLandscape} alt={selectedTechnology.title}  className="xl:hidden h-full"/>
                     <img src={selectedTechnology.imagePortrait} alt={selectedTechnology.title}  className="hidden xl:block"/>
                 </div>
 
