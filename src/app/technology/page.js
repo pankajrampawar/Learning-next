@@ -29,32 +29,44 @@ export default function Technology() {
         
     }
 
+    const selectedTechnology = technologies[selection];
+
     return <main>
+
+        <div className="fixed top-0 left-0 h-full w-full -z-10">
+            <img src="/assets/technology/background-technology-mobile.jpg" alt="empty space background" className="sm:hidden w-full h-full"/>
+            <img src="/assets/technology/background-technology-tablet.jpg" alt="empty space background" className="hidden sm:block xl:hidden w-full h-full"/>
+            <img src="/assets/technology/background-technology-desktop.jpg" alt="empty space background" className="hidden xl:block w-full h-full"/>
+        </div>
         <nav>
             <Navbar/>
         </nav>
 
-        <section>
-            <div>
+        <section className="flex flex-col items-center text-center">
+            <div className="flex text-base">
+                <span className="font-bold mr-2">03</span>
                 <h2>SPACE LAUNCH 101</h2>
             </div>
             
-            <div>
-                <div>
-                    <h3>THE TERMINOLOGY..</h3>
-                    <h1>technology title</h1>
-                    <p>details</p>
+            <div className="flex flex-col">
+                
+                <div className="order-3 px-5 mt-7">
+                    <h3 className="text-sm">THE TERMINOLOGY..</h3>
+                    <h1 className="text-2xl">{selectedTechnology.title}</h1>
+                    <p className="text-base font-thin">{selectedTechnology.detail}</p>
                 </div>
 
-                <div>
-                    <span>1</span>
-                    <span>2</span>
-                    <span>3</span>
+                <div className="flex gap-4 order-2 justify-center mt-9">
+                    <div className={`flex items-center justify-center w-10 h-10 border border-gray-600 rounded-full ${selection === 1 ? 'bg-white text-black' : 'bg-transparent text-white'}`}>1</div>
+                    <div className={`flex items-center justify-center w-10 h-10 border border-gray-600 rounded-full ${selection === 2 ? 'bg-white text-black' : 'bg-transparent text-white'}`}>2</div>
+                    <div className={`flex items-center justify-center w-10 h-10 border border-gray-600 rounded-full ${selection === 3 ? 'bg-white text-black' : 'bg-transparent text-white'}`}>3</div>
                 </div>
 
-                <div>
-                    <img src="image" alt="technology image" />
+                <div className='order-1 mt-8'>
+                    <img src={selectedTechnology.imageLandscape} alt={selectedTechnology.title}  className="xl:hidden"/>
+                    <img src={selectedTechnology.imagePortrait} alt={selectedTechnology.title}  className="hidden xl:block"/>
                 </div>
+
             </div>  
         </section>
     </main>
