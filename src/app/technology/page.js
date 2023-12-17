@@ -43,17 +43,17 @@ export default function Technology() {
         </nav>
 
         <section className="flex flex-col items-center text-center mt-8 md:mt-10 xl:w-full xl:pl-[165px]">
-            <div className="flex text-base md:text-xl md:self-start ml-[40px] xl:ml-0 xl:text-[28px]">
+            <div className="flex text-base md:text-xl md:self-start md:ml-[40px] xl:ml-0 xl:text-[28px]">
                 <span className="font-bold mr-2">03</span>
                 <h2>SPACE LAUNCH 101</h2>
             </div>
             
             <div className="flex flex-col items-center xl:flex-row xl:justify-between xl:w-full">
                 
-                <div className="order-3 px-5 mt-7 xl:mt-0 md:mt-11 md:max-w-[458px] xl:max-w-[490px] xl:order-2 text-left xl:px-0">
+                <div className="order-3 px-5 mt-7 xl:mt-0 md:mt-11 md:max-w-[458px] xl:max-w-[490px] xl:order-2 xl:text-left xl:px-0">
                     <h3 className="text-sm md:text-base">THE TERMINOLOGY..</h3>
-                    <h1 className="text-2xl md:text-[40px] xl:text-[56px] md:mt-4 xl:mt-[11px] xl:leading-none">{selectedTechnology.title}</h1>
-                    <p className="text-base xl:text-lg font-thin md:mt-4 xl:mt-[17px]">{selectedTechnology.detail}</p>
+                    <h1 className="text-2xl md:text-[40px] xl:text-[56px] mt-4 xl:mt-[11px] xl:leading-none">{selectedTechnology.title}</h1>
+                    <p className="text-base xl:text-lg font-thin mt-4 xl:mt-[17px]">{selectedTechnology.detail}</p>
                 </div>
 
                 <div className="flex gap-4 xl:gap-8 order-2 justify-center mt-9 md:mt-[56px] xl:order-1 xl:flex-col">
