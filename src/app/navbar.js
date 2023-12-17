@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
 
@@ -9,6 +10,9 @@ export default function Navbar() {
     const toggleMenu = ()=>{
         setIsMenuOpen(prev => !prev);
     }
+
+    const pathName = usePathname();
+    console.log(pathName);
 
     return <main className='flex justify-between mt-5 md:mt-0 xl:mt-14 ml-8 items-center '>
         <div className='flex items-center justify-between w-full mr-8 md:w-fit'
@@ -27,20 +31,20 @@ export default function Navbar() {
             >
                 <img src='/assets/shared/icon-close.svg' alt="close icon"/>
             </div>
-            <span className='flex items-center'>
-                <p className='font-bold  mr-3'>00</p>
+            <span className={`flex items-center ${pathName === '/' ? 'navSelected' : 'navNotSelected'} relative`}>
+                <p className={`font-bold mr-3`}>00</p>
                 <Link href='/'>HOME</Link>
             </span>
-            <span className='flex items-center'>
-                <p className='font-bold  mr-3'>01</p>
+            <span className={`flex items-center ${pathName === '/destination' ? 'navSelected' : 'navNotSelected'} relative`}>
+                <p className={`font-bold  mr-3`}>01</p>
                 <Link href='/destination'>DESTINATION</Link>
             </span>
-            <span className='flex items-center'>
-                <p className='font-bold  mr-3'>02</p>
+            <span className={`flex items-center ${pathName === '/crew' ? 'navSelected' : 'navNotSelected'} relative`}>
+                <p className={`font-bold  mr-3`}>02</p>
                 <Link href='/crew'>CREW</Link>
             </span>
-            <span className='flex items-center'>
-                <p className='font-bold  mr-3'>03</p>
+            <span className={`flex items-center ${pathName === '/technology' ? 'navSelected' : 'navNotSelected'} relative`}>
+                <p className={`font-bold  mr-3`}>03</p>
                 <Link href='/technology'>TECHNOLOGY</Link>
             </span>
         </div>

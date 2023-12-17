@@ -53,3 +53,30 @@ body {
     width: 100%;
     background-color: rgb(150, 152, 156);
 }
+
+.navSelected::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: white;
+    height: 4px;
+    width: 100%;
+    bottom: calc(-100% - 6px);
+}
+
+.navNotSelected::after {
+    content: '';
+    position:absolute;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.625);
+    height: 4px;
+    width: 0%;
+    bottom: calc(-100% - 6px);
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 250ms ease-in-out;
+}
+
+.navNotSelected:hover::after {
+    width: 100%;
+}
