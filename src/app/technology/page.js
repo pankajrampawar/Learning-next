@@ -57,9 +57,9 @@ export default function Technology() {
                 </div>
 
                 <div className="flex gap-4 xl:gap-8 order-2 justify-center mt-9 md:mt-[56px] xl:order-1 xl:flex-col">
-                    <div className={`flex items-center justify-center w-10 h-10 md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px] border border-gray-600 rounded-full ${selection === 1 ? 'bg-white text-black' : 'bg-transparent text-white'}`} onClick={()=>{setSelection(1)}}>1</div>
-                    <div className={`flex items-center justify-center w-10 h-10 md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px] border border-gray-600 rounded-full ${selection === 2 ? 'bg-white text-black' : 'bg-transparent text-white'}`} onClick={()=>{setSelection(2)}}>2</div>
-                    <div className={`flex items-center justify-center w-10 h-10 md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px] border border-gray-600 rounded-full ${selection === 3 ? 'bg-white text-black' : 'bg-transparent text-white'}`} onClick={()=>{setSelection(3)}}>3</div>
+                    <div className={`flex items-center justify-center w-10 h-10 md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px] border border-gray-600 rounded-full  hover:bg-slate-600 cursor-pointer ${selection === 1 ? 'bg-white text-black' : 'bg-transparent text-white'}`} onClick={()=>{setSelection(1)}}>1</div>
+                    <div className={`flex items-center justify-center w-10 h-10 md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px] border border-gray-600 rounded-full  hover:bg-slate-600 cursor-pointer ${selection === 2 ? 'bg-white text-black' : 'bg-transparent text-white'}`} onClick={()=>{setSelection(2)}}>2</div>
+                    <div className={`flex items-center justify-center w-10 h-10 md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px] border border-gray-600 rounded-full  hover:bg-slate-600 cursor-pointer ${selection === 3 ? 'bg-white text-black' : 'bg-transparent text-white'}`} onClick={()=>{setSelection(3)}}>3</div>
                 </div>
 
                 <div className='order-1 mt-8 md:mt-[60px] md:h-[310px] xl:order-3 xl:h-fit'>
