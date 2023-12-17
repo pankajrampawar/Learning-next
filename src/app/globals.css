@@ -27,3 +27,29 @@ body {
 .hoverOver:hover::after {
     transform: scale(1.5);
 }
+
+.afterElement::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: white;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 0;
+    transition: width 0.2s ease-in;
+}
+
+.afterElement.selected::after {
+    width: 100%
+}
+
+.afterElement.selected:hover::after {
+    background-color: white;
+}
+
+.afterElement:hover::after {
+    width: 100%;
+    background-color: rgb(150, 152, 156);
+}

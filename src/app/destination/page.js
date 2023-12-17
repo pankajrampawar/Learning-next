@@ -70,10 +70,10 @@ export default function Destination () {
 
             <div className="flex flex-col gap-6 md:gap-8 md:max-w-[575px] xl:max-w-[445px]">
                 <div className="flex justify-center xl:justify-start gap-2 md:gap-6 text-lg mb-4">
-                    <sapn onClick={()=>{setSelection(1)}}>MOON</sapn>
-                    <span onClick={()=>{setSelection(2)}}>MARS</span>
-                    <span onClick={()=>{setSelection(3)}}>EUROPA</span>
-                    <span onClick={()=>{setSelection(4)}}>TITAN</span>
+                    <sapn onClick={()=>{setSelection(1)}} className={`${selection === 1 ? 'text-white selected' : 'text-gray-500 hover:text-gray-300'} cursor-pointer afterElement relative cursor:pointer`}>MOON</sapn>
+                    <span onClick={()=>{setSelection(2)}} className={`${selection === 2 ? 'text-white selected' : 'text-gray-500 hover:text-gray-300'} cursor-pointer afterElement relative cursor:pointer`}>MARS</span>
+                    <span onClick={()=>{setSelection(3)}} className={`${selection === 3 ? 'text-white selected' : 'text-gray-500 hover:text-gray-300'} cursor-pointer afterElement relative cursor:pointer`}>EUROPA</span>
+                    <span onClick={()=>{setSelection(4)}} className={`${selection === 4 ? 'text-white selected' : 'text-gray-500 hover:text-gray-300'} cursor-pointer afterElement relative cursor:pointer`}>TITAN</span>
                 </div>
 
                 <h1 className="text-5xl md:text-7xl xl:text-8xl">{selectedPlanet.title}</h1>
