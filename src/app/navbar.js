@@ -31,19 +31,19 @@ export default function Navbar() {
             >
                 <img src='/assets/shared/icon-close.svg' alt="close icon"/>
             </div>
-            <span className={`flex items-center ${pathName === '/' ? 'sm:navSelected' : 'sm:navNotSelected'} relative`}>
+            <span className={`flex items-center ${pathName === '/' ? 'navSelected' : 'navNotSelected'} relative`}>
                 <p className={`font-bold mr-3`}>00</p>
                 <Link href='/'>HOME</Link>
             </span>
-            <span className={`flex items-center ${pathName === '/destination' ? 'sm:navSelected' : 'sm:navNotSelected'} relative`}>
+            <span className={`flex items-center ${pathName === '/destination' ? 'navSelected' : 'navNotSelected'} relative`}>
                 <p className={`font-bold  mr-3`}>01</p>
                 <Link href='/destination'>DESTINATION</Link>
             </span>
-            <span className={`flex items-center ${pathName === '/crew' ? 'sm:navSelected' : 'sm:navNotSelected'} relative`}>
+            <span className={`flex items-center ${pathName === '/crew' ? 'navSelected' : 'navNotSelected'} relative`}>
                 <p className={`font-bold  mr-3`}>02</p>
                 <Link href='/crew'>CREW</Link>
             </span>
-            <span className={`flex items-center ${pathName === '/technology' ? 'sm:navSelected' : 'sm:navNotSelected'} relative`}>
+            <span className={`flex items-center ${pathName === '/technology' ? 'navSelected' : 'navNotSelected'} relative`}>
                 <p className={`font-bold  mr-3`}>03</p>
                 <Link href='/technology'>TECHNOLOGY</Link>
             </span>
